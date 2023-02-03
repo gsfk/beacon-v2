@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "additionalProperties": true,
     "definitions": {
         "AlphanumericFilter": {
+            "additionalProperties": false,
             "description": "Filter results based on operators and values applied to alphanumeric fields.",
             "properties": {
                 "id": {
@@ -43,6 +43,9 @@
             "type": "object"
         },
         "CustomFilter": {
+            "additionalProperties": {
+                "type": "object"
+            },
             "description": "Filter results to include records that contain a custom term defined by this Beacon.",
             "properties": {
                 "id": {
@@ -75,6 +78,7 @@
             ]
         },
         "OntologyFilter": {
+            "additionalProperties": false,
             "description": "Filter results to include records that contain a specific ontology term.",
             "properties": {
                 "id": {

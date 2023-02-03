@@ -47,6 +47,7 @@ definitions:
         type: string
         description: The entry type to which the filter applies
         example: biosamples
+    additionalProperties: false
   AlphanumericFilter:
     description: Filter results based on operators and values applied to alphanumeric
       fields.
@@ -82,6 +83,7 @@ definitions:
         type: string
         description: The entry type to which the filter applies
         example: biosamples
+    additionalProperties: false
   CustomFilter:
     type: object
     description: Filter results to include records that contain a custom term defined
@@ -97,4 +99,5 @@ definitions:
         type: string
         description: The entry type to which the filter applies
         example: biosamples
-additionalProperties: true
+    additionalProperties:
+      type: object
