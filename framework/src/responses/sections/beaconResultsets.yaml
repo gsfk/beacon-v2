@@ -31,6 +31,9 @@ $defs:
       resultsCount:
         description: Number of results in this Resultset.
         type: integer
+      aggregateResults:
+        description: Aggregated results for this resultset
+        $ref: ./beaconAggregateResults.yaml
       resultsHandovers:
         description: List of handovers that apply to this resultset, not to the whole
           Beacon or to a result in particular.
