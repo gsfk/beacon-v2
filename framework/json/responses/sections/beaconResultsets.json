@@ -3,6 +3,10 @@
         "ResultsetInstance": {
             "additionalProperties": true,
             "properties": {
+                "aggregateResults": {
+                    "$ref": "./beaconAggregateResults.json",
+                    "description": "Aggregated results for this resultset"
+                },
                 "exists": {
                     "type": "boolean"
                 },

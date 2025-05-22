@@ -1,0 +1,43 @@
+{
+    "$defs": {
+        "AggregateResultsInstance": {
+            "description": "Aggregated information obtained from individual level info of the cohort members",
+            "properties": {
+                "description": {
+                    "description": "Description of this category",
+                    "type": "string"
+                },
+                "distribution": {
+                    "description": "Categories and results or counts for each category. XXXX",
+                    "example": {
+                        "female": 51,
+                        "male": 50
+                    },
+                    "properties": {},
+                    "type": "object"
+                },
+                "id": {
+                    "$ref": "../../requests/aggregationTerms.json#/$defs/AggregationTerm",
+                    "description": "The id of this aggregation term"
+                },
+                "name": {
+                    "description": "Name of this category",
+                    "example": "Genders",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "distribution"
+            ],
+            "type": "object"
+        }
+    },
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "Beacon aggregate results section.",
+    "items": {
+        "$ref": "#/$defs/AggregateResultsInstance"
+    },
+    "minItems": 0,
+    "type": "array"
+}
