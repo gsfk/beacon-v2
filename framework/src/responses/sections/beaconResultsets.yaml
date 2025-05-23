@@ -10,6 +10,9 @@ properties:
     items:
       $ref: '#/$defs/ResultsetInstance'
     minItems: 0
+  aggregateResults:
+    description: Aggregate results for entire response
+    $ref: ./beaconAggregateResults.yaml
 required:
   - resultSets
 additionalProperties: true

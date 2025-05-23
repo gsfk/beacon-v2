@@ -6,8 +6,5 @@ properties:
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/Exists
   numTotalResults:
     $ref: ../../common/beaconCommonComponents.yaml#/$defs/NumTotalResults
-  aggregateResults:
-    # aggregate stats for entire query 
-    $ref: ./beaconAggregateResults.yaml
 required:
   - exists
