@@ -8,8 +8,7 @@ items:
 $defs:
   AggregateResultsInstance:
     description: >-
-      Aggregated information obtained from individual level info of the cohort
-      members
+      Aggregated data from results, with distributions for the aggregation terms given in the request.
     type: object
     properties:
       id:
@@ -18,23 +17,22 @@ $defs:
           The id of this aggregation term
       name:
         description: >-
-          Name of this category
+          Name of this aggregation term
         type: string
         example: Genders
       description:
         description: >-
-          Description of this category
+          Description of this aggregation term
         type: string
       distribution:
         description: >-
-          Categories and results or counts for each category. XXXX
+          Distribution of results for this aggregation term.
         type: object
-        properties: {}
-        example: 
+        example:
           # we generally expect values to be integers, but this is left unrestricted
           # in principle these could be bools as well
           male: 50
           female: 51
-    required: 
+    required:
       - id
       - distribution
