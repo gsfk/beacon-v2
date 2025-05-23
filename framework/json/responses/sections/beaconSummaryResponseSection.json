@@ -2,9 +2,6 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Beacon results summary section.",
     "properties": {
-        "aggregateResults": {
-            "$ref": "./beaconAggregateResults.json"
-        },
         "exists": {
             "$ref": "../../common/beaconCommonComponents.json#/$defs/Exists"
         },

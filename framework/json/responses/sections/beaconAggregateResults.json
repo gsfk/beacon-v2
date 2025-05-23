@@ -1,19 +1,18 @@
 {
     "$defs": {
         "AggregateResultsInstance": {
-            "description": "Aggregated information obtained from individual level info of the cohort members",
+            "description": "Aggregated data from results, with distributions for the aggregation terms given in the request.",
             "properties": {
                 "description": {
-                    "description": "Description of this category",
+                    "description": "Description of this aggregation term",
                     "type": "string"
                 },
                 "distribution": {
-                    "description": "Categories and results or counts for each category. XXXX",
+                    "description": "Distribution of results for this aggregation term.",
                     "example": {
                         "female": 51,
                         "male": 50
                     },
-                    "properties": {},
                     "type": "object"
                 },
                 "id": {
@@ -21,7 +20,7 @@
                     "description": "The id of this aggregation term"
                 },
                 "name": {
-                    "description": "Name of this category",
+                    "description": "Name of this aggregation term",
                     "example": "Genders",
                     "type": "string"
                 }

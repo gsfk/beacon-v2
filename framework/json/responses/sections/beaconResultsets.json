@@ -57,6 +57,10 @@
         "$schema": {
             "$ref": "../../common/beaconCommonComponents.json#/$defs/$schema"
         },
+        "aggregateResults": {
+            "$ref": "./beaconAggregateResults.json",
+            "description": "Aggregate results for entire response"
+        },
         "resultSets": {
             "items": {
                 "$ref": "#/$defs/ResultsetInstance"
